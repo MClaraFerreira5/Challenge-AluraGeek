@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", serif;
+    
+}
+
+h1{
+
+    font-size: 22px;
+
+}
+
+h2{
+
+    font-size: 16px;
+    color: white
+}
+header{
+    background-color: #5300C8;
+}
+
+
+.cabecalho{
+    max-width: 100%;
+    height: 96px;
+    background-color: #5300C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cabecalho img{
+    width: 138px;
+    height: 56px;
+    
+}
+
+.cabecalho h1{
+    width: fit-content;
+    color: white;
+}
+
+.container-principal{
+    display: flex;
+    padding: 60px 40px 60px 40px;
+    gap: 70px;
+}
+
+.produtos{
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.3);;
+
+}
+
+.container-principal section h1{
+    align-self: center;
+}
+
+.card{
+    width: fit-content;
+    height: 258px;
+    background-color: #5300C8;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card img{
+    width: 174px;
+    height: 174px;
+    border-radius: 3px;
+}
+
+.card-info{
+    font-family: "IBM Plex Mono", serif;
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    height: fit-content;
+}
+.card-info p{
+    font-size: 15px;
+    color: white;
+}
+
+.card-info-preco{
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-info-preco img{
+    width: 24px;
+    height: 24px;
+    
+
+}
+
+.formulario{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: fit-content;
+    box-shadow: none;
+}   
+
+.formulario form{
+    font-family: "IBM Plex Mono", serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 392px;
+    gap: 40px;
+
+}
+
+.formulario form input{
+    width: 392px;
+    height: 58px;
+    border: 3px solid #03318C ;
+    border-radius: 30px;
+    text-decoration: #03318C;
+    padding-left: 10px ;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    
+}
+
+input::placeholder{
+    color: #03318C;
+    
+}
+
+.container-botoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.container-botoes button{
+    width: 188px;
+    height: 55px;
+    border: 3px solid #03318C;
+    border-radius: 15px;
+
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.botao-escuro{
+    color: white;
+    background-color: #03318C;
+    
+}
+
+.botao-claro{
+    color: #03318C;
+    background-color: white;
+}
+
+
+.rodape{
+    background-color: #5300C8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+
+}
+
+.rodape-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rodape-imagem img{
+    width: 138px;
+    height: 56px;
+}
+
+@media (max-width:430px) {
+    .container-principal{
+        flex-direction: column-reverse;
+    }
+    .formulario form input{
+        width: 350px;
+    }
+    .formulario form {
+        width: 350px;
+    }
+
+}
